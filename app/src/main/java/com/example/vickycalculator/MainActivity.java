@@ -1,3 +1,8 @@
+/*
+Main Code for accessible Android Calculator made for TAD class
+Written by Vicky McDermott
+Adapted from https://github.com/luong-komorebi/Calculator-App
+ */
 package com.example.vickycalculator;
 
 import android.os.Build;
