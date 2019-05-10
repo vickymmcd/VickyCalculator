@@ -20,7 +20,8 @@
                 android:id="@+id/textView"
                 android:layout_width="144dp"
                 android:layout_height="53dp"
-                android:text="TextView"
+                android:text=""
+                android:contentDescription="@string/result"
                 tools:layout_editor_absoluteX="201dp"
                 tools:layout_editor_absoluteY="51dp" />
         </LinearLayout>
@@ -58,6 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+"
+                android:contentDescription="@string/plus_button"
                 tools:layout_editor_absoluteX="280dp"
                 tools:layout_editor_absoluteY="132dp" />
         </LinearLayout>
@@ -96,6 +98,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="-"
+                android:contentDescription="@string/minus_button"
                 tools:layout_editor_absoluteX="280dp"
                 tools:layout_editor_absoluteY="180dp" />
 
@@ -133,6 +136,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="*"
+                android:contentDescription="@string/multiply_button"
                 tools:layout_editor_absoluteX="280dp"
                 tools:layout_editor_absoluteY="228dp" />
 
@@ -171,6 +175,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="/"
+                android:contentDescription="@string/divide_button"
                 tools:layout_editor_absoluteX="280dp"
                 tools:layout_editor_absoluteY="276dp" />
 

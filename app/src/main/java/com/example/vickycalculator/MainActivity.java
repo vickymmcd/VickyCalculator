@@ -1,5 +1,7 @@
 package com.example.vickycalculator;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -138,6 +140,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     private void onEqualButtonClicked() {
         int res = 0;
         try {
@@ -159,6 +162,8 @@ public class MainActivity extends AppCompatActivity {
             }
             result = String.valueOf(res);
             resultTextView.setText(result);
+            resultTextView.setContentDescription("result is: " + result);
+            resultTextView.announceForAccessibility("result is: " + result);
         }
         catch (Exception e) {
             e.printStackTrace();
@@ -174,12 +179,14 @@ public class MainActivity extends AppCompatActivity {
     private void onClearButtonClicked() {
         result = "";
         resultTextView.setText("");
+        resultTextView.setContentDescription("result");
     }
 
     private void onNumberButtonClicked(String pos) {
         result = resultTextView.getText().toString();
         result = result + pos;
         resultTextView.setText(result);
+        resultTextView.setContentDescription("result is: " + result);
     }
 
     private void initControl() {
